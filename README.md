@@ -1,12 +1,12 @@
 # KTP HTTP Client
 
-[![Build Status](https://img.shields.io/travis/risan/ktp.svg?style=flat-square)](https://travis-ci.org/risan/ktp)
-[![HHVM Tested](https://img.shields.io/hhvm/risan/ktp.svg?style=flat-square)](https://travis-ci.org/risan/ktp)
-[![StyleCI](https://styleci.io/repos/53063075/shield?style=flat-square)](https://styleci.io/repos/53063075)
-[![Coverage Status](https://img.shields.io/scrutinizer/coverage/g/risan/ktp.svg?style=flat-square)](https://scrutinizer-ci.com/g/risan/ktp/code-structure)
-[![Quality Score](https://img.shields.io/scrutinizer/g/risan/ktp.svg?style=flat-square)](https://scrutinizer-ci.com/g/risan/ktp)
-[![Latest Stable Version](https://img.shields.io/packagist/v/risan/ktp.svg?style=flat-square)](https://packagist.org/packages/risan/ktp)
-[![License](https://img.shields.io/packagist/l/risan/ktp.svg?style=flat-square)](https://packagist.org/packages/risan/ktp)
+[![Build Status](https://travis-ci.org/risan/ktp.svg?branch=master)](https://travis-ci.org/risan/ktp)
+[![HHVM Status](http://hhvm.h4cc.de/badge/risan/ktp.svg?style=flat)](http://hhvm.h4cc.de/package/risan/ktp)
+[![StyleCI](https://styleci.io/repos/53063075/shield?style=flat)](https://styleci.io/repos/53063075)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/risan/ktp/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/risan/ktp/?branch=master)
+[![Code Coverage](https://scrutinizer-ci.com/g/risan/ktp/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/risan/ktp/?branch=master)
+[![Latest Stable Version](https://poser.pugx.org/risan/ktp/v/stable)](https://packagist.org/packages/risan/ktp)
+[![License](https://poser.pugx.org/risan/ktp/license)](https://packagist.org/packages/risan/ktp)
 
 PHP HTTP client library for finding 2014 Indonesian presidential election voter's data based on it's NIK. The data is directly scraped from [KPU website](https://data.kpu.go.id/ss8.php) website.
 
