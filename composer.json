@@ -1,7 +1,7 @@
 {
   "name": "risan/ktp",
   "type": "library",
-  "description": "HTTP client library for finding voter's data based on NIK from KPU website.",
+  "description": "HTTP client library for finding 2014 Indonesian presidential election voter's data based on it's NIK",
   "keywords": ["ktp", "nik", "kpu", "pemilu"],
   "homepage": "https://github.com/risan/ktp",
   "license": "MIT",
