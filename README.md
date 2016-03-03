@@ -3,6 +3,8 @@
 [![Build Status](https://img.shields.io/travis/risan/ktp.svg?style=flat-square)](https://travis-ci.org/risan/ktp)
 [![HHVM Tested](https://img.shields.io/hhvm/risan/ktp.svg?style=flat-square)](https://travis-ci.org/risan/ktp)
 [![StyleCI](https://styleci.io/repos/53063075/shield?style=flat-square)](https://styleci.io/repos/53063075)
+[![Coverage Status](https://img.shields.io/scrutinizer/coverage/g/risan/ktp.svg?style=flat-square)](https://scrutinizer-ci.com/g/risan/ktp/code-structure)
+[![Quality Score](https://img.shields.io/scrutinizer/g/risan/ktp.svg?style=flat-square)](https://scrutinizer-ci.com/g/risan/ktp)
 [![Latest Stable Version](https://img.shields.io/packagist/v/risan/ktp.svg?style=flat-square)](https://packagist.org/packages/risan/ktp)
 [![License](https://img.shields.io/packagist/l/risan/ktp.svg?style=flat-square)](https://packagist.org/packages/risan/ktp)
 
