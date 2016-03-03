@@ -9,8 +9,18 @@ use Ktp\Contracts\HttpClient as HttpClientContract;
 
 class HttpClient extends Guzzle implements HttpClientContract
 {
+    /**
+     * Http base uri.
+     *
+     * @var string
+     */
     protected $baseUri;
 
+    /**
+     * Create a new instance of HttpClient.
+     *
+     * @param string $baseUri
+     */
     public function __construct($baseUri)
     {
         $this->baseUri = $baseUri;
@@ -27,11 +37,25 @@ class HttpClient extends Guzzle implements HttpClientContract
         ]);
     }
 
+    /**
+     * Get base uri.
+     *
+     * @return string
+     */
     public function baseUri()
     {
         return $this->baseUri;
     }
 
+    /**
+     * Send HTTP POST request.
+     *
+     * @param string $uri
+     * @param array  $data
+     * @param array  $options
+     *
+     * @return Psr\Http\Message\ResponseInterface
+     */
     public function post($uri, array $data = [], array $options = [])
     {
         $options['form_params'] = $data;

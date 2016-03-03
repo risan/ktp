@@ -10,18 +10,37 @@ class Finder implements FinderContract
     const BASE_URI = 'https://data.kpu.go.id/';
     const FIND_BY_NIK_URI = 'ss8.php';
 
+    /**
+     * HttpClient instance.
+     *
+     * @var Ktp\Contracts\HttpClient
+     */
     protected $httpClient;
 
+    /**
+     * Create a new instance of Finder.
+     */
     public function __construct()
     {
         $this->httpClient = new HttpClient(self::BASE_URI);
     }
 
+    /**
+     * Get the HttpClient instance.
+     *
+     * @return Ktp\Contracts\HttpClient
+     */
     public function httpClient()
     {
         return $this->httpClient;
     }
 
+    /**
+     * Find by NIK.
+     *
+     * @param  int $nik
+     * @return array|null
+     */
     public function findByNik($nik)
     {
         $data = [

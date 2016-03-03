@@ -6,6 +6,11 @@ use Ktp\Contracts\Parsers\PageParser as PageParserContract;
 
 class NikResultPageParser extends PageParser implements PageParserContract
 {
+    /**
+     * Parse the page.
+     *
+     * @return array|null
+     */
     public function parse()
     {
         $fields = $this->fields();
@@ -25,11 +30,23 @@ class NikResultPageParser extends PageParser implements PageParserContract
         ];
     }
 
+    /**
+     * Get all fields node.
+     *
+     * @return Symfony\Component\DomCrawler\Crawler
+     */
     protected function fields()
     {
         return $this->crawler()->filter('span.field');
     }
 
+    /**
+     * Parse text from crawler node.
+     *
+     * @param Symfony\Component\DomCrawler\Crawler $node
+     * @param mixed $default
+     * @return mixed
+     */
     protected function parseTextFromNode($node, $default = null)
     {
         $text = trim($node->text());
@@ -41,6 +58,13 @@ class NikResultPageParser extends PageParser implements PageParserContract
         return $text;
     }
 
+    /**
+     * Parse integer from crawler node.
+     *
+     * @param Symfony\Component\DomCrawler\Crawler $node
+     * @param mixed $default
+     * @return mixed
+     */
     protected function parseIntFromNode($node, $default = null)
     {
         $value = $this->parseTextFromNode($node);
