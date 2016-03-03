@@ -7,7 +7,8 @@ interface Finder
     /**
      * Find by NIK.
      *
-     * @param  int $nik
+     * @param int $nik
+     *
      * @return array|null
      */
     public function findByNik($nik);

@@ -16,7 +16,7 @@ class NikResultPageParser extends PageParser implements PageParserContract
         $fields = $this->fields();
 
         if (count($fields) === 0) {
-            return null;
+            return;
         }
 
         return [
@@ -44,7 +44,8 @@ class NikResultPageParser extends PageParser implements PageParserContract
      * Parse text from crawler node.
      *
      * @param Symfony\Component\DomCrawler\Crawler $node
-     * @param mixed $default
+     * @param mixed                                $default
+     *
      * @return mixed
      */
     protected function parseTextFromNode($node, $default = null)
@@ -62,7 +63,8 @@ class NikResultPageParser extends PageParser implements PageParserContract
      * Parse integer from crawler node.
      *
      * @param Symfony\Component\DomCrawler\Crawler $node
-     * @param mixed $default
+     * @param mixed                                $default
+     *
      * @return mixed
      */
     protected function parseIntFromNode($node, $default = null)

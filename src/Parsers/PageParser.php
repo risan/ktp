@@ -58,7 +58,8 @@ abstract class PageParser
     /**
      * Create a new instance from response.
      *
-     * @param  Psr\Http\Message\ResponseInterface $response
+     * @param Psr\Http\Message\ResponseInterface $response
+     *
      * @return Ktp\Contracts\Parsers\PageParser
      */
     public static function fromResponse(ResponseInterface $response)

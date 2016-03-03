@@ -3,8 +3,6 @@
 namespace Ktp;
 
 use GuzzleHttp\Client as Guzzle;
-use Psr\Http\Message\ResponseInterface;
-use Symfony\Component\DomCrawler\Crawler;
 use Ktp\Contracts\HttpClient as HttpClientContract;
 
 class HttpClient extends Guzzle implements HttpClientContract
