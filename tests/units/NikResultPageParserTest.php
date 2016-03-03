@@ -58,8 +58,8 @@ EOD;
 
         $parsed = $pageParser->parse();
 
+        $this->assertInternalType('array', $parsed);
         $this->assertCount(7, $parsed);
-
         $this->assertEquals([
             'nik' => 123,
             'name' => 'JOHN DOE',
@@ -69,5 +69,51 @@ EOD;
             'kabupaten_kota' => 'BAZ',
             'provinsi' => 'QUX',
         ], $parsed);
+    }
+
+    /** @test */
+    function nik_page_parser_parse_empty_integer_field()
+    {
+        $html = <<<EOD
+<span class="field"></span>
+<span class="field">JOHN DOE</span>
+<span class="field">LAKI-LAKI</span>
+<span class="field">FOO</span>
+<span class="field">BAR</span>
+<span class="field">BAZ</span>
+<span class="field">QUX</span>
+EOD;
+
+        $pageParser = $this->getMockForAbstractClass(NikResultPageParser::class, [$html]);
+
+        $parsed = $pageParser->parse();
+
+        $this->assertInternalType('array', $parsed);
+        $this->assertCount(7, $parsed);
+        $this->assertArrayHasKey('nik', $parsed);
+        $this->assertEquals(null, $parsed['nik']);
+    }
+
+    /** @test */
+    function nik_page_parser_parse_empty_string_field()
+    {
+        $html = <<<EOD
+<span class="field">123</span>
+<span class="field"></span>
+<span class="field">LAKI-LAKI</span>
+<span class="field">FOO</span>
+<span class="field">BAR</span>
+<span class="field">BAZ</span>
+<span class="field">QUX</span>
+EOD;
+
+        $pageParser = $this->getMockForAbstractClass(NikResultPageParser::class, [$html]);
+
+        $parsed = $pageParser->parse();
+
+        $this->assertInternalType('array', $parsed);
+        $this->assertCount(7, $parsed);
+        $this->assertArrayHasKey('name', $parsed);
+        $this->assertEquals(null, $parsed['name']);
     }
 }
