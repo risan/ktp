@@ -29,4 +29,5 @@ script:
   - if [[ "$COLLECT_COVERAGE" == "true" ]]; then vendor/bin/phpunit --coverage-text --coverage-clover=coverage.clover; else vendor/bin/phpunit --no-coverage; fi
 
 after_script:
+  - if [[ "$COLLECT_COVERAGE" == "true" ]]; then wget https://scrutinizer-ci.com/ocular.phar; fi
   - if [[ "$COLLECT_COVERAGE" == "true" ]]; then php vendor/bin/ocular code-coverage:upload --format=php-clover coverage.clover; fi
