@@ -18,7 +18,7 @@ interface HttpClient
      * @param array  $data
      * @param array  $options
      *
-     * @return Psr\Http\Message\ResponseInterface
+     * @return \Psr\Http\Message\ResponseInterface
      */
     public function post($uri, array $data = [], array $options = []);
 }

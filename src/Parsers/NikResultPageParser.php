@@ -33,7 +33,7 @@ class NikResultPageParser extends PageParser implements PageParserContract
     /**
      * Get all fields node.
      *
-     * @return Symfony\Component\DomCrawler\Crawler
+     * @return \Symfony\Component\DomCrawler\Crawler
      */
     protected function fields()
     {
@@ -43,8 +43,8 @@ class NikResultPageParser extends PageParser implements PageParserContract
     /**
      * Parse text from crawler node.
      *
-     * @param Symfony\Component\DomCrawler\Crawler $node
-     * @param mixed                                $default
+     * @param \Symfony\Component\DomCrawler\Crawler $node
+     * @param mixed                                 $default
      *
      * @return mixed
      */
@@ -62,8 +62,8 @@ class NikResultPageParser extends PageParser implements PageParserContract
     /**
      * Parse integer from crawler node.
      *
-     * @param Symfony\Component\DomCrawler\Crawler $node
-     * @param mixed                                $default
+     * @param \Symfony\Component\DomCrawler\Crawler $node
+     * @param mixed                                 $default
      *
      * @return mixed
      */

@@ -13,7 +13,7 @@ class Finder implements FinderContract
     /**
      * HttpClient instance.
      *
-     * @var Ktp\Contracts\HttpClient
+     * @var \Ktp\Contracts\HttpClient
      */
     protected $httpClient;
 
@@ -28,7 +28,7 @@ class Finder implements FinderContract
     /**
      * Get the HttpClient instance.
      *
-     * @return Ktp\Contracts\HttpClient
+     * @return \Ktp\Contracts\HttpClient
      */
     public function httpClient()
     {
