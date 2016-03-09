@@ -1,7 +1,7 @@
 <?php
 
 use Ktp\Finder;
-use Ktp\Contracts\HttpClient as HttpClientContract;
+use Ktp\Contracts\HttpClientInterface;
 
 class FinderTest extends PHPUnit_Framework_TestCase {
     /** @test */
@@ -9,7 +9,7 @@ class FinderTest extends PHPUnit_Framework_TestCase {
     {
         $finder = new Finder;
 
-        $this->assertInstanceOf(HttpClientContract::class, $finder->httpClient());
+        $this->assertInstanceOf(HttpClientInterface::class, $finder->httpClient());
     }
 
     /** @test */

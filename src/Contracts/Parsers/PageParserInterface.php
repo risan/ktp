@@ -4,7 +4,7 @@ namespace Ktp\Contracts\Parsers;
 
 use Psr\Http\Message\ResponseInterface;
 
-interface PageParser
+interface PageParserInterface
 {
     /**
      * Get page content.

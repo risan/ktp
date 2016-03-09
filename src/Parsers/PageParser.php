@@ -60,7 +60,7 @@ abstract class PageParser
      *
      * @param \Psr\Http\Message\ResponseInterface $response
      *
-     * @return \Ktp\Contracts\Parsers\PageParser
+     * @return \Ktp\Contracts\Parsers\PageParserInterface
      */
     public static function fromResponse(ResponseInterface $response)
     {

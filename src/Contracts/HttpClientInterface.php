@@ -2,7 +2,7 @@
 
 namespace Ktp\Contracts;
 
-interface HttpClient
+interface HttpClientInterface
 {
     /**
      * Get base uri.

@@ -3,9 +3,9 @@
 namespace Ktp;
 
 use Ktp\Parsers\NikResultPageParser;
-use Ktp\Contracts\Finder as FinderContract;
+use Ktp\Contracts\FinderInterface;
 
-class Finder implements FinderContract
+class Finder implements FinderInterface
 {
     const BASE_URI = 'https://data.kpu.go.id/';
     const FIND_BY_NIK_URI = 'ss8.php';
@@ -13,7 +13,7 @@ class Finder implements FinderContract
     /**
      * HttpClient instance.
      *
-     * @var \Ktp\Contracts\HttpClient
+     * @var \Ktp\Contracts\HttpClientInterface
      */
     protected $httpClient;
 
@@ -28,7 +28,7 @@ class Finder implements FinderContract
     /**
      * Get the HttpClient instance.
      *
-     * @return \Ktp\Contracts\HttpClient
+     * @return \Ktp\Contracts\HttpClientInterface
      */
     public function httpClient()
     {

@@ -2,9 +2,9 @@
 
 namespace Ktp\Parsers;
 
-use Ktp\Contracts\Parsers\PageParser as PageParserContract;
+use Ktp\Contracts\Parsers\PageParserInterface;
 
-class NikResultPageParser extends PageParser implements PageParserContract
+class NikResultPageParser extends PageParser implements PageParserInterface
 {
     /**
      * Parse the page.

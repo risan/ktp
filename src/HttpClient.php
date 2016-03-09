@@ -3,9 +3,9 @@
 namespace Ktp;
 
 use GuzzleHttp\Client as Guzzle;
-use Ktp\Contracts\HttpClient as HttpClientContract;
+use Ktp\Contracts\HttpClientInterface;
 
-class HttpClient extends Guzzle implements HttpClientContract
+class HttpClient extends Guzzle implements HttpClientInterface
 {
     /**
      * Http base uri.

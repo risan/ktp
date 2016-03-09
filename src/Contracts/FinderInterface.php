@@ -2,7 +2,7 @@
 
 namespace Ktp\Contracts;
 
-interface Finder
+interface FinderInterface
 {
     /**
      * Find by NIK.
