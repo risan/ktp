@@ -5,7 +5,7 @@
 [![StyleCI](https://styleci.io/repos/53063075/shield?style=flat)](https://styleci.io/repos/53063075)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/risan/ktp/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/risan/ktp/?branch=master)
 [![Code Coverage](https://scrutinizer-ci.com/g/risan/ktp/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/risan/ktp/?branch=master)
-[![SensioLabsInsight](https://insight.sensiolabs.com/projects/a554870b-5b0a-46d9-80fc-bd7698fdd034/mini.png)](https://insight.sensiolabs.com/projects/a554870b-5b0a-46d9-80fc-bd7698fdd034)
+[![SensioLabs Insight](https://img.shields.io/sensiolabs/i/a554870b-5b0a-46d9-80fc-bd7698fdd034.svg)](https://insight.sensiolabs.com/projects/a554870b-5b0a-46d9-80fc-bd7698fdd034)
 [![Latest Stable Version](https://poser.pugx.org/risan/ktp/v/stable)](https://packagist.org/packages/risan/ktp)
 [![License](https://poser.pugx.org/risan/ktp/license)](https://packagist.org/packages/risan/ktp)
 
