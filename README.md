@@ -37,7 +37,7 @@ You may also add `risan\ktp` package directly into your `composer.json` file:
 
 ```bash
 "require": {
-  "risan/ktp": "~1.0"
+  "risan/ktp": "~1.1"
 }
 ```
 
